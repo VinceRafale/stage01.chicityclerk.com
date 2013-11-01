@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress_8');
+define('DB_NAME', 'wordpress_b');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress_c');
+define('DB_USER', 'wordpress_f');
 
 /** MySQL database password */
-define('DB_PASSWORD', '703StnMT!p');
+define('DB_PASSWORD', '0_JpZ61nrU');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost:3306');
@@ -41,14 +41,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'uEly4ch74IOCB7scn3d7f@Xs%LEiO&S)imQpnARqvqzaIp7l21VtojRjP0DC(C0J');
-define('SECURE_AUTH_KEY',  '&hE@!CSY5pVvRU00Sgv^CHFDi0DfYjDr*)(HNuJO&BGD!Tei%6Nm0ElHFycw&q%C');
-define('LOGGED_IN_KEY',    'Rqki9vlfaF*NY2wdEn%3nKD@O5tLvM&LGIMzsJ3tnrXdQ5tOIeffjX3fC27s3vJh');
-define('NONCE_KEY',        'CSlxd@%8ffpWnP(warDZFwsuF%32svnPA2N)e@%L*M22Auv86#6b$W@9Ve6b^K$p');
-define('AUTH_SALT',        '50ZrFBC04*m^rEXzV7pIXVN5TAcgDWiu7uSA*yDbCTuMg^b$zSHadINYxDHF!(tH');
-define('SECURE_AUTH_SALT', 'ksWS05Pt3Uo0lJcOjaWZDg2Pr6iIMzPo*yYmIy)5Lw6te)FHz5*7$Ca^8dg%r$5o');
-define('LOGGED_IN_SALT',   '3TJZ4dKJqueL5xAVKH!2!g0xGfmqmSRKM)LvWR4E!jrxjOeoe3h!7FFi64vR32wg');
-define('NONCE_SALT',       'x9jCADt%V&NjL&F@5lWodBdxpM!Ds^s%g^@u(Zv72CZ&1ShVS^9yGy&YBK$uTj$t');
+define('AUTH_KEY',         'Z31@NWEx)NFRmM!$O8DXi2m6HS#J8&kTegaosl*@q(R(G%WJv2cMLsoHbh!(%)TV');
+define('SECURE_AUTH_KEY',  '2EDLVSt0D5yH^qjKHlEWWkRMUgSMsWJUJS4YmB%rmuE21@lP2@iC%9ux1$(kA%PK');
+define('LOGGED_IN_KEY',    'sGuGc^l0xozOTUgUQS74Oj7CfF@vN83jekB4#g(7FOREkj$tZldM*a$qv@FdYFEG');
+define('NONCE_KEY',        'Usjae^SkdvXwAS8t@gY1qAGl2WktXC)t$SX(7kvd5qORTs8wkcDMVpJt)TP@8slV');
+define('AUTH_SALT',        'Ji8cadjAkQZYzPJDIH@M9(296(Zg*iAdcNA59VeVj&!k98dsiJQ3Z1gE2^z5^3yv');
+define('SECURE_AUTH_SALT', 'vs9n1eWjkp2GvuLU95%b7TrmsV!RGp0gey0RTkSYHclbKwmNH&9Ms$m@GQr&yVJY');
+define('LOGGED_IN_SALT',   'Il0WHCuv8w0ZsgXvMoLLT&Ssi4fe3qrm2Bq8B9q*h2dpk@2YpXBFHoONf(adOCaG');
+define('NONCE_SALT',       'tlnKWYRQ0tZUqAzKiwJ*E$RkyXSxPv6umX^Z4x71SPS25AzO9KsLv0ZogG55R*JU');
 /**#@-*/
 
 /**

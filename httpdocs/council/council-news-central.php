@@ -54,7 +54,7 @@
 				<div id="cnc-banner">
 					<p class="banner-top">Welcome to...</p>
 					<p class="banner-title">Council News Central</p>
-					<p class="banner-bottom">Council will meet again Thursday, November 8 at 9a.m. <a href="http://chicago.legistar.com/Legislation.aspx" target="_blank">Visit the LIC to view prior meetings</a>.</p>
+					<p class="banner-bottom">Council will meet Wednesday, June 26, 2013  at 10a.m. <a href="http://chicago.legistar.com/Calendar.aspx" target="_blank">Visit the LIC to view prior meetings</a>.</p>
 				</div>
 				<div id="quick-links">
 					<table style="width: 100%;">
@@ -84,15 +84,15 @@
 								<tr>
 									<td>
 										
-										<!-- Begin photo Placeholder 
+										<!-- Begin photo Placeholder -->
 										<div id="cnc-placeholder">
-        									<a href="http://chicago.legistar.com/MeetingDetail.aspx?ID=211035&GUID=43AED644-A324-4DBB-BCEC-9A7C0762E4F8&Options=info|&Search=" target="_blank"><span class="link">Video for the October 31<sup>st</sup> meeting is available in the <span class="red">Legislative Information Center</span>.</span></a>
-        								</div>
+        									<a href="http://chicago.legistar.com/MeetingDetail.aspx?ID=211035&GUID=43AED644-A324-4DBB-BCEC-9A7C0762E4F8&Options=info|&Search=" target="_blank"><span class="link">Video and captions will begin streaming in this area about 15 minutes prior to meeting - just refresh the browser at that time. Video of prior meetings is available in the <span class="red">Legislative Information Center</span>.</span></a>
+        								</div> 
         								
         								
 										<!-- End photo Placeholder -->
 										
-										<!-- Begin Video + Caption Container  -->
+										<!-- Begin Video + Caption Container 
 										<div id="cnc-video" class="pull-up">
 											<iframe id="DataStreamController" height="0" width="0" style="height: 0px; width: 0px; border:0; "></iframe>
 			                        		<script type="text/javascript" src="http://chicago.granicus.com/core/js/flash/swfobject.js"></script>

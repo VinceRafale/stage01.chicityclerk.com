@@ -169,7 +169,7 @@ function validateProduct() {
 									<div class="entry-content">
 										<div id="view-toggles">
 											<a class="btn btn-primary" id="toggle-form" href="javascript:;">Start Over</a>
-											<a class="btn btn-primary" id="toggle-all" href="javascript:;">View All Locations</a>
+											<a class="btn btn-primary" id="toggle-all" href="javascript:;">View All Locations</a> 
 											<a class="btn btn-primary" id="toggle-results" href="javascript:;" style="display: none;">Show Results</a>
 										</div>
 										<script type="text/javascript">
@@ -198,14 +198,14 @@ function validateProduct() {
 										</script>
 										<div id="viewall-container" style="display: none;">
 											<ul class="occ-tabs">
-												<li><a class="occ-tab-link current" id="occ-tab-toggle-map">Map View</a></li>
-												<li><a class="occ-tab-link" id="occ-tab-toggle-list">List View</a></li>
+												<!-- <li><a class="occ-tab-link" id="occ-tab-toggle-map">Map View</a></li> -->
+												<li><a class="occ-tab-link current" id="occ-tab-toggle-list">List View</a></li>
 											</ul>
 											<div id="occ-tab-content">
-												<div class="occ-tab-int current" id="occ-tab-content-map">
-													<iframe width="740" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=205149368546586095531.0004cd84bdcfdb3598053&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=41.912497,-87.72583&amp;spn=0.22994,0.507431&amp;z=11&amp;output=embed"></iframe>
-												</div>
-												<div class="occ-tab-int" id="occ-tab-content-list">
+												<!-- <div class="occ-tab-int"  id="occ-tab-content-map">
+													<p><iframe src="http://batchgeo.com/map/5d2bd8029fac8ae5106777dff07773c9" frameborder="0" width="100%" height="550" style="border:1px solid #aaa;border-radius:10px;"></iframe></p><p><small>View <a href="http://batchgeo.com/map/5d2bd8029fac8ae5106777dff07773c9">full screen map</a></small></p>
+												</div> -->
+												<div class="occ-tab-int current" id="occ-tab-content-list">
 													<table id="datatable" class="table table-condensed table-striped table-bordered">
 														<thead>
 															<tr>
@@ -227,7 +227,7 @@ function validateProduct() {
 															<?php
 																require("phpsqlsearch_dbinfo.php");
 												
-																$connection = mysql_connect ('clerkpress.stage01.chicityclerk.com:3306', $username, $password);
+																$connection = mysql_connect ('clerkpress.chicityclerk.com:3306', $username, $password);
 												
 																if (!$connection) {
 												
@@ -277,7 +277,7 @@ function validateProduct() {
 												
 												require("phpsqlsearch_dbinfo.php");
 												
-												$connection = mysql_connect ('clerkpress.stage01.chicityclerk.com:3306', $username, $password);
+												$connection = mysql_connect ('clerkpress.chicityclerk.com:3306', $username, $password);
 												
 												if (!$connection) {
 												
@@ -469,7 +469,7 @@ function validateProduct() {
 																			if ($extraFee == '$5.50') { ?>
 																	<li>A $5.50 service fee applies to purchases at this location.</li>
 																		<?php } ?>
-																	<li><a target='_blank' href="<?php echo $direction; ?>">Get Directions</a></li>
+																	<!-- <li><a target='_blank' href="<?php echo $direction; ?>">Get Directions</a></li> -->
 																</ul>
 															</div>
 														</td>
@@ -589,14 +589,11 @@ function validateProduct() {
 																<td>&nbsp;</td>
 																<td class="top"><strong>Search Radius:</strong><br />
 																	<select name="radius">
-																		<option value="1" <?php if(isset($_POST['radius']) && $_POST['radius'] == 1 ) echo ' selected="selected"';?>>1 mile</option>
-																		<option value="2" <?php if(isset($_POST['radius']) && $_POST['radius'] == 2 ) echo ' selected="selected"';?>>2 miles</option>
-																		<option value="3" <?php if(isset($_POST['radius']) && $_POST['radius'] == 3 ) echo ' selected="selected"';?>>3 miles</option>
-																		<option value="4" <?php if(isset($_POST['radius']) && $_POST['radius'] == 4 ) echo ' selected="selected"';?>>4 miles</option>
 																		<option value="5" <?php if(isset($_POST['radius']) && $_POST['radius'] == 5 ) echo ' selected="selected"';?>>5 miles</option>
 																		<option value="10" <?php if(isset($_POST['radius']) && $_POST['radius'] == 10 ) echo ' selected="selected"';?>>10 miles</option>
 																		<option value="25" <?php if(isset($_POST['radius']) && $_POST['radius'] == 25 ) echo ' selected="selected"';?>>25 miles</option>
 																		<option value="50" <?php if(isset($_POST['radius']) && $_POST['radius'] == 50 ) echo ' selected="selected"';?>>50 miles</option>
+																		<option value="100" <?php if(isset($_POST['radius']) && $_POST['radius'] == 100 ) echo ' selected="selected"';?>>100 miles</option>
 																	</select>
 																</td>
 															</tr>

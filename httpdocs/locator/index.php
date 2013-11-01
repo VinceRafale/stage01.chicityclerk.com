@@ -98,17 +98,25 @@ function validateProduct() {
 						<div class="interior-navigation">
 							<div class="menu-city-stickers-parking-container">
 								<ul id="menu-city-stickers-parking" class="menu">
-									<li>
+									<li class="current-menu-parent">
 										<a href="/city-stickers-parking/">Purchase Options</a>
-									</li>
-									<li class="current-menu-item">
-										<a href="/locator/">Store Locator</a>
+										<ul class="sub-menu nav">
+											<li class="current-menu-item">
+												<a href="/locator/">Store Locator</a>
+											</li>
+											<li>
+												<a href="/city-stickers-parking/ward-sales/">Ward Sales</a>
+											</li>
+										</ul>
 									</li>
 									<li>
 										<a href="/city-stickers-parking/about-city-vehicle-stickers/">About City Vehicle Stickers</a>
 									</li>
 									<li>
 										<a href="/city-stickers-parking/about-residential-parking/">About Residential Parking</a>
+									</li>
+									<li>
+										<a href="/city-stickers-parking/2014-2/">Year-Round Sales 2014</a>
 									</li>
 								</ul>
 							</div>
@@ -121,7 +129,11 @@ function validateProduct() {
 									<h2 class="entry-title">Store Locator</h2>
 									<div class="entry-content">
 										<div id="locator-container">
-											<p>Follow the steps below to find out where you can purchase City Vehicle Stickers and Daily Parking Permits.</p>
+											<p><strong>Buying a Vehicle Sticker? Make sure you <a href="/city-stickers-parking/about-city-vehicle-stickers/whats-a-vin/">bring the required documentation</a>.</strong></p>
+
+											<p><strong>Need Daily Permits? Check <a href="/city-stickers-parking/about-residential-parking/">eligibility requirements first</a>!</strong></p>
+
+											<p>	Follow the steps below to find out where you can purchase City Vehicle Stickers and Daily Parking Permits.</p>
 											<div id="search-form">
 												<form action="results.php" method="post" onsubmit="return validateProduct();">
 													<table id="locator-step1">
@@ -193,14 +205,11 @@ function validateProduct() {
 																<td>&nbsp;</td>
 																<td class="top"><strong>Search Radius:</strong><br />
 																	<select name="radius">
-																		<option value="1" <?php if(isset($_POST['radius']) && $_POST['radius'] == 1 ) echo ' selected="selected"';?>>1 mile</option>
-																		<option value="2" <?php if(isset($_POST['radius']) && $_POST['radius'] == 2 ) echo ' selected="selected"';?>>2 miles</option>
-																		<option value="3" <?php if(isset($_POST['radius']) && $_POST['radius'] == 3 ) echo ' selected="selected"';?>>3 miles</option>
-																		<option value="4" <?php if(isset($_POST['radius']) && $_POST['radius'] == 4 ) echo ' selected="selected"';?>>4 miles</option>
 																		<option value="5" <?php if(isset($_POST['radius']) && $_POST['radius'] == 5 ) echo ' selected="selected"';?>>5 miles</option>
 																		<option value="10" <?php if(isset($_POST['radius']) && $_POST['radius'] == 10 ) echo ' selected="selected"';?>>10 miles</option>
 																		<option value="25" <?php if(isset($_POST['radius']) && $_POST['radius'] == 25 ) echo ' selected="selected"';?>>25 miles</option>
 																		<option value="50" <?php if(isset($_POST['radius']) && $_POST['radius'] == 50 ) echo ' selected="selected"';?>>50 miles</option>
+																		<option value="100" <?php if(isset($_POST['radius']) && $_POST['radius'] == 100 ) echo ' selected="selected"';?>>100 miles</option>
 																	</select>
 																</td>
 															</tr>
@@ -234,7 +243,7 @@ function validateProduct() {
 	</div>
 </div>
 <div id="footer">
-	<p>© 2012 Office of the City Clerk, City of Chicago. All Rights Reserved.</p>
+	<p>© 2013 Office of the City Clerk, City of Chicago. All Rights Reserved.</p>
 </div>
 </body>
 </html>

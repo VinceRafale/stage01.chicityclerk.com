@@ -177,7 +177,6 @@ a:hover {
   border-radius: 500px;
 }
 .row {
-  margin-left: -15px;
   *zoom: 1;
 }
 .row:before,
@@ -192,7 +191,6 @@ a:hover {
 [class*="span"] {
   float: left;
   min-height: 1px;
-  margin-left: 15px;
 }
 .container,
 .navbar-static-top .container,

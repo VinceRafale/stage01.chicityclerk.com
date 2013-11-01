@@ -1,11 +1,11 @@
 <?php 
 
-$con = mysql_connect( "clerkpress.dev01.chicityclerk.com", "admin22", "H2tha!zzo" );
+$con = mysql_connect( "clerkpress.stage01.chicityclerk.com", "admin21", "H2tha!zzo5" );
 
 	if( !$con ) :
 		die( 'Could not connect: ' . mysql_error() );
 	endif;
 	
-	mysql_select_db("clerkData_dev01", $con);
+	mysql_select_db("clerkData_stage01", $con);
 	
 ?>

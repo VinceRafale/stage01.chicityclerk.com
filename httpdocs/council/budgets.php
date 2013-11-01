@@ -171,12 +171,7 @@ th.download {
 										<p>Departments submit revenue and expenditure estimates to the <a href="http://www.cityofchicago.org/city/en/depts/obm.html" target="_blank">Office of Budget and Management</a> for preparation of the budget. Before August 1 of each year, the Budget Director files the next year’s Annual Financial Analysis Report with the City Clerk outlining the City’s fiscal projection <a href="http://docs.chicityclerk.com/exec/MayorEmanuel/F2011-124.pdf" target="_blank">(Mayoral Executive Order 2011-7)</a>. In accordance with Illinois law, the Mayor is required to submit his Executive Budget recommendations for  City Council consideration <a href="http://www.ilga.gov/legislation/ilcs/documents/006500050K8-2-2.htm" target="_blank">(65 ILCS 5/8-2-2)</a>. Once introduced the budget is immediately sent to the <a href="http://committeeonthebudget.cityofchicago.org/" target="_blank">City Council Committee on Budget and Government Operations</a> for review.  Prior to final consideration and under State law, the full City Council will hold at least one public hearing to give citizens’ an opportunity to speak on the proposed budget.</p>
 										<p>After considering any amendments or adjustments, the City Council must then vote to approve a final balanced  budget no later than  Dec. 31 of each year.</p>
 										<ul class="occ-tabs">
-											
-										<!-- begin 2013 tab code, I think 
 											<li><a class="occ-tab-link" href="/legislaiton-records/city-budgets/">2013 Budget</a></li>
-											
-										<-- end 2013 tab code, i think --> 	
-											
 											<li><a class="occ-tab-link current" id="occ-tab-toggle-prev" href="javascript:;">Previous Budgets</a></li>
 										</ul>
 										<div id="occ-tab-content">

@@ -50,7 +50,14 @@ form {
 	padding: 0;
 }
 
+#foot p{
+	padding-top: 30px;
+	text-align: center;
+	color: #fff;
+}
+
 /* Global Header and Subheader Styles */
+
 
 .container {
 	margin: 0 auto;

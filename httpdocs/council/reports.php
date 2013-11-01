@@ -169,7 +169,7 @@ th.download {
 										<p>The Office of the City Clerk produces the following reports for each city council meeting:</p>
 										<ul>
 											<li>Referred Legislation Report – summary report of legislation introduced and referred to committee.</li>
-											<li>Attendance and Divided Roll Call Votes – summary report of Aldermanic attendance and split or divided vote tallies.</li>
+											<li>Attendance and Divided Roll Call Reports – summary report of Aldermanic attendance and split or divided vote tallies.</li>
 										</ul>
 										<p>For your convenience, we have published these reports to the document library below. Please use the onscreen controls to locate then download / open reports you are interested in.</p>
 										<table id="datatable" class="table table-condensed table-striped table-bordered">

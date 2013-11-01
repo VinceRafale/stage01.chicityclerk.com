@@ -71,31 +71,11 @@ function validateForm() {
 		<div id="header">
 			<img src="images/header.png"/>
 		</div>
-		<div id="subheader">
-            <div id="go-back"><a href="../index.html"><img src="images/go-back.png" border="0" /></a></div>
-            <div id="store-logo">
-            	<img src="images/subheader.png"  width="200" />
-			</div>
-			<div id="shopping-cart">
-            	<table width="245" align="right" border="0">
-  <tr>
-    <td align="right" valign="top" width="125"><img src="images/share.png" /></td>
-    <td align="right" valign="top" width="50"><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwebapps.cityofchicago.org%2FStickerOnlineWeb%2Fpageflows%2Fsearch%2FstartOnlinePurchase.do
-&t=Buy%20City%20of%20Chicago%20Vehicle%20Stickers%20and%20Residential%20Daily%20Parking%20Permits%20on%20EZ%20BUY!" target="_blank"><img src="images/facebook.jpg" width="36" /></a></td>
-	<td align="left" valign="top" width="40"><a href="https://twitter.com/intent/tweet?text=Buy+2012-2013+Chicago+Vehicle+Stickers%2C+Dog+Emblems%2C+and+Guest+Passes+online.+Clerk+Mendoza%E2%80%99s+EZ+BUY+site+makes+it+easy+http%3A%2F%2Fis.gd%2F7aZd7w" target="_blank"><img src="images/twitter.jpg" width="36" /></td>
-  </tr>
-</table>
-          	</div>
-		</div>
-		<div id="progress">
-			<img src="images/progress-1.png" />
-		</div>
 		<div id="content">
-			<h1>Need one of these?</h1>
 				<div id="stickers">
     			<div id="annual-sticker">
-        			<p>2012-2013 Vehicle Sticker</p>
-        			<img src="images/2012-annual-sticker.jpg" width="230" vspace="7" alt="2012-2013 Vehicle Sticker" />
+        			<p>2013-2014 Vehicle Sticker</p>
+        			<img src="images/annual-sticker.jpg" width="230" alt="2013-2014 Vehicle Sticker" />
    				</div>
     			<div id="guest-pass">
       				<p>Daily Residential Parking Permits</p>            
@@ -107,32 +87,35 @@ function validateForm() {
                 </div>
         		<div style="clear:both;"></div>
     		</div>
-			<h2 class="margtop">Great! You've come to the right place...</h2>
-			<!--<p style="font-size: 16px;">Please check the box below to agree to the <span onclick="return journal('http://chicityclerk.com/ezbuy/terms-and-conditions.html')"><a href="javascript:;">Terms and Conditions</a></span>, then click Next.</p>
-			<div><input type="checkbox" name="terms" /> I agree to the Terms and Conditions
-            </div>
-            <p align="right"><input type="submit" class="continue" /></p> -->
-            <p style="font-size: 14px; font-weight: bold;">We're glad you're here, however the City of Chicago is performing planned maintenance that is impacting the sale of City Vehicle Stickers, Daily Residential Parking Permits, and Dog Registration. We hope to have EZ>Buy back online some time this afternoon. Please check back soon.</p>
-            <p style="font-size: 18px;color:#FF0000;">OR</p>
-            <form id="downtime-signup" method="post" action="index-down-confirm.php" name="email-me" onsubmit="return validateForm()">
-                <p style="font-weight: bold;">Enter your e-mail address below. We'll send you an e-mail as soon as EZ>BUY is back online.</p>
-                <p style="color: #FF0000;">* = Required Field</p>
+            <p>
+              Unfortunately, EZ>Buy is undergoing important maintenance presently. We should be back online sometime later today. Please check back soon. Also, if you'd like, enter your name and email below, and we will happily email you when EZ>Buy is back online
+            </p>
+       <form id="downtime-signup" method="post" action="index-down-confirm.php" name="email-me" onsubmit="return validateForm()">
+
+          <script type="text/javascript"
+     src="http://www.google.com/recaptcha/api/challenge?k=6LfUFeISAAAAAGzNmdTyhRFjG4X6HhixPAiZKpdF">
+  </script>
+  <noscript>
+     <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LfUFeISAAAAAGzNmdTyhRFjG4X6HhixPAiZKpdF"
+         height="300" width="500" frameborder="0"></iframe><br>
+     <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+     </textarea>
+     <input type="hidden" name="recaptcha_response_field"
+         value="manual_challenge">
+  </noscript>
                 <p>First Name: <input type="text" size="50" name="fname" /></p>
                 <p>Last Name: <input type="text" size="50" name="lname" /></p>
                 <p>Email<span style="color:#FF0000;">*</span>: <input type="text" name="emailSubmit" size="55" /></p>
                 
                 <p align="center"><input type="submit" value="Submit" /></p>
 			</form>
-			<p>The e-mail you will receive notifying you of the site's functionality will come from <span style="color: red;">ezbuy@chicityclerk.com</span></p>
+			<p>Please Note: The e-mail you will receive will come from <span style="color: red;">ezbuy@cityofchicago.org</span></p>
+			
 			<div style="clear: both;"></div>
 		</div>
-        <div id="logos">
-        	<p class="lrgwhite">Did you hear...</p>
-            <p class="smlwhite">After you complete your online purchase of a 2012-2013 Vehicle Sticker, you'll have a chance to enter and win prizes, courtesy of these Chicago sports teams and businesses.</p>
-        	<img src="images/raffle-logos.jpg" />
-        </div>
+        
         <div id="footer">
-        	<p>Office of the City Clerk | City of Chicago | Susana A. Mendoza, City Clerk</p>
+        	<p><strong>Office of the City Clerk | City of Chicago | Susana A. Mendoza, City Clerk</strong><br>ezbuy@cityofchicago.org | (312) 742-9200</p>
 		</div>
 	</div>
 </body>
