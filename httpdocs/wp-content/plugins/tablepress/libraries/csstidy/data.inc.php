@@ -593,7 +593,7 @@ $data['csstidy']['quoted_string_properties'] = array('content', 'font', 'font-fa
  *
  * @global array $data['csstidy']['quoted_string_properties']
  */
-$data['csstidy']['multiple_properties'] = array_merge( $data['csstidy']['color_values'], $data['csstidy']['unit_values'], array('background-image', 'transition') );
+$data['csstidy']['multiple_properties'] = array_merge( $data['csstidy']['color_values'], $data['csstidy']['unit_values'], array( 'transition', 'background-image', 'border-image', 'list-style-image' ) );
 
 /**
  * An array containing all predefined templates.
@@ -663,4 +663,4 @@ $data['csstidy']['predefined_templates']['low_compression'][] = '</span>'."\n"; 
 $data['csstidy']['predefined_templates']['low_compression'][] = "\n";
 
 // Add TablePress specific modifications, based on Jetpack modifications
-require 'data-tp.inc.php';
+require dirname( __FILE__ ) . '/data-tp.inc.php';

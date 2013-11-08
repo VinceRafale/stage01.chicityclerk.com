@@ -28,7 +28,7 @@ class TablePress_Export_View extends TablePress_View {
 	 * @param string $action Action for this view
 	 * @param array $data Data for this view
 	 */
-	public function setup( $action, $data ) {
+	public function setup( $action, array $data ) {
 		parent::setup( $action, $data );
 
 		$this->process_action_messages( array(
@@ -171,15 +171,6 @@ class TablePress_Export_View extends TablePress_View {
 </tbody>
 </table>
 <?php
-	}
-
-	/**
-	 * Return the content for the help tab for this screen
-	 *
-	 * @since 1.0.0
-	 */
-	protected function help_tab_content() {
-		return 'Help for the Export Table screen';
 	}
 
 } // class TablePress_Export_View

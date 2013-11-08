@@ -39,7 +39,7 @@ class TablePress_Preview_Table_View extends TablePress_View {
 	 * @param string $action Action for this view
 	 * @param array $data Data for this view
 	 */
-	public function setup( $action, $data ) {
+	public function setup( $action, array $data ) {
 		$this->action = $action;
 		$this->data = $data;
 	}
@@ -64,7 +64,7 @@ body {
 <div id="tablepress-page">
 <p>
 <?php _e( 'This is a preview of your table.', 'tablepress' ); ?> <?php _e( 'Because of CSS styling in your theme, the table might look different on your page!', 'tablepress' ); ?> <?php _e( 'The features of the DataTables JavaScript library are also not available or visible in this preview!', 'tablepress' ); ?><br />
-<?php printf( __( 'To insert the table into a page, post, or text widget, copy the Shortcode %s and paste it into the editor.', 'tablepress' ), '<input type="text" class="table-shortcode table-shortcode-inline" value="[' . TablePress::$shortcode . ' id=' . esc_attr( $this->data['table_id'] ) . ' /]" readonly="readonly" />' ); ?>
+<?php printf( __( 'To insert the table into a page, post, or text widget, copy the Shortcode %s and paste it into the editor.', 'tablepress' ), '<input type="text" class="table-shortcode table-shortcode-inline" value="' . esc_attr( '[' . TablePress::$shortcode . " id={$this->data['table_id']} /]" ) . '" readonly="readonly" />' ); ?>
 </p>
 <?php echo $this->data['body_html']; ?>
 </div>

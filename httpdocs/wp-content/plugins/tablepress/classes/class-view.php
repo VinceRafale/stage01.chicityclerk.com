@@ -52,7 +52,7 @@ abstract class TablePress_View {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @var object
+	 * @var TablePress_Admin_Page
 	 */
 	protected $admin_page;
 
@@ -109,7 +109,7 @@ abstract class TablePress_View {
 			'id' => 'tablepress-help', // This should be unique for the screen.
 			'title' => __( 'TablePress Help', 'tablepress' ),
 			'content' => '<p>' . $this->help_tab_content() . '</p>'
-						. '<p>' . sprintf( __( 'More information about TablePress can be found on the <a href="%1$s">plugin&#8217;s website</a> or on its page in the <a href="%s">WordPress Plugin Directory</a>.', 'tablepress' ), 'http://tablepress.org/', 'http://wordpress.org/extend/plugins/tablepress/' ) . ' '
+						. '<p>' . sprintf( __( 'More information about TablePress can be found on the <a href="%1$s">plugin&#8217;s website</a> or on its page in the <a href="%s">WordPress Plugin Directory</a>.', 'tablepress' ), 'http://tablepress.org/', 'http://wordpress.org/plugins/tablepress/' ) . ' '
 						. sprintf( __( 'For technical information, please see the <a href="%s">documentation</a>.', 'tablepress' ), 'http://tablepress.org/documentation/' ) . ' '
 						. sprintf( __( '<a href="%1$s">Support</a> is provided through the <a href="%2$s">WordPress Support Forums</a>.', 'tablepress' ), 'http://tablepress.org/support/', 'http://wordpress.org/tags/tablepress' ) . ' '
 						. sprintf( __( 'Before asking for support, please carefully read the <a href="%s">Frequently Asked Questions</a>, where you will find answers to the most common questions, and search through the forums.', 'tablepress' ), 'http://tablepress.org/faq/' ) . '<br />'
@@ -145,7 +145,7 @@ abstract class TablePress_View {
 	 * @param string $action Action for this view
 	 * @param array $data Data for this view
 	 */
-	public function setup( $action, $data ) {
+	public function setup( $action, array $data ) {
 		$this->action = $action;
 		$this->data = $data;
 
@@ -156,10 +156,9 @@ abstract class TablePress_View {
 		$this->admin_page = TablePress::load_class( 'TablePress_Admin_Page', 'class-admin-page-helper.php', 'classes' );
 		$this->admin_page->enqueue_style( 'common' );
 		remove_action( 'admin_print_styles', array( TablePress::$controller, 'add_tablepress_hidpi_css' ), 21 ); // Don't load HiDPI CSS via <style> on TablePress pages, as it's part of common.css
-		/* // @TODO: maybe later necessary: RTL styles for admin interface
+		// RTL styles for the admin interface
 		if ( is_rtl() )
-			$this->admin_page->enqueue_style( 'common-rtl' );
-		*/
+			$this->admin_page->enqueue_style( 'common-rtl', array( 'tablepress-common' ) );
 		$this->admin_page->enqueue_script( 'common', array( 'jquery', 'postbox' ), array(
 			'common' => array(
 				'ays_delete_single_table' => _n( 'Do you really want to delete this table?', 'Do you really want to delete these tables?', 1, 'tablepress' ),
@@ -197,7 +196,7 @@ abstract class TablePress_View {
 	 *
 	 * @param array $action_messages Action messages for the screen
 	 */
-	protected function process_action_messages( $action_messages ) {
+	protected function process_action_messages( array $action_messages ) {
 		if ( $this->data['message'] && isset( $action_messages[ $this->data['message'] ] ) ) {
 			$class = ( 'error' == substr( $this->data['message'], 0, 5 ) ) ? 'error' : 'updated';
 			$this->add_header_message( "<strong>{$action_messages[ $this->data['message'] ]}</strong>", $class );
@@ -289,7 +288,7 @@ abstract class TablePress_View {
 	 * @param array $data Data for this screen
 	 * @param array $box Information about the text box
 	 */
-	protected function default_nonce_fields( $data, $box ) {
+	protected function default_nonce_fields( array $data, array $box ) {
 		if ( ! $this->has_meta_boxes )
 			return;
 		wp_nonce_field( 'closedpostboxes', 'closedpostboxesnonce', false ); echo "\n";
@@ -305,7 +304,7 @@ abstract class TablePress_View {
 	 * @param array $data Data for this screen
 	 * @param array $box Information about the text box
 	 */
-	protected function action_nonce_field( $data, $box ) {
+	protected function action_nonce_field( array $data, array $box ) {
 		wp_nonce_field( TablePress::nonce( $this->action ) ); echo "\n";
 	}
 
@@ -317,7 +316,7 @@ abstract class TablePress_View {
 	 * @param array $data Data for this screen
 	 * @param array $box Information about the text box
 	 */
-	protected function action_field( $data, $box ) {
+	protected function action_field( array $data, array $box ) {
 		echo "<input type=\"hidden\" name=\"action\" value=\"tablepress_{$this->action}\" />\n";
 	}
 
@@ -409,7 +408,7 @@ abstract class TablePress_View {
 	 * @param array $data Data for this screen
 	 * @param array $box Information about the text box
 	 */
-	protected function textbox_submit_button( $data, $box ) {
+	protected function textbox_submit_button( array $data, array $box ) {
 		$caption = isset( $data['submit_button_caption'] ) ? $data['submit_button_caption'] : __( 'Save Changes', 'tablepress' );
 		?>
 		<p class="submit"><input type="submit" value="<?php echo esc_attr( $caption ); ?>" class="button button-primary button-large" name="submit" /></p>
