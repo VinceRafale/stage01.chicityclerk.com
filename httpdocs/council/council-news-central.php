@@ -84,7 +84,7 @@
 								<tr>
 									<td>
 										
-										<!-- Begin photo Placeholder -->
+										<!-- Begin photo Placeholder 
 										<div id="cnc-placeholder">
         									<a href="http://chicago.legistar.com/MeetingDetail.aspx?ID=211035&GUID=43AED644-A324-4DBB-BCEC-9A7C0762E4F8&Options=info|&Search=" target="_blank"><span class="link">Video and captions will begin streaming in this area about 15 minutes prior to meeting - just refresh the browser at that time. Video of prior meetings is available in the <span class="red">Legislative Information Center</span>.</span></a>
         								</div> 
@@ -92,7 +92,7 @@
         								
 										<!-- End photo Placeholder -->
 										
-										<!-- Begin Video + Caption Container 
+										<!-- Begin Video + Caption Container -->
 										<div id="cnc-video" class="pull-up">
 											<iframe id="DataStreamController" height="0" width="0" style="height: 0px; width: 0px; border:0; "></iframe>
 			                        		<script type="text/javascript" src="http://chicago.granicus.com/core/js/flash/swfobject.js"></script>
